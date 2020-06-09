@@ -1,0 +1,34 @@
+body {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+.topbliliant {
+	height: 50.625px;
+	width: auto;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+.startWrap {
+	overflow: hidden;
+	position: relative;
+	transform: translate(-50%, -50%);
+	transition: all 2s;
+}
+.start {
+	position: absolute;
+	height: 100%;
+	width: auto;
+	top: 0;
+	margin-left: -300%;
+}
+.button {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	height: 50px;
+	width: 70px;
+}

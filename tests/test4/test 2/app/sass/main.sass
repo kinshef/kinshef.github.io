@@ -1,0 +1,431 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+html
+	box-sizing: border-box
+
+*, *:after, *:before
+	box-sizing: inherit
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	font-style: normal
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+ul
+	padding: 0
+	margin: 0
+li
+	list-style-type: none
+
+a
+	text-decoration: none
+	color: $text
+
+
+.wrap
+	width: 1200px
+	height: auto
+	margin: 0 auto
+
+.hiden
+	display: none
+
+
+
+
+header
+	width: 1024px
+	margin: 0 auto
+	height: 130px
+	display: grid
+	align-items: center
+	justify-items: center
+	grid-template-columns: max-content repeat(2, auto) max-content repeat(2, auto) max-content
+	img
+		height: 100%
+		width: auto
+	select
+		appearance: none
+		width: auto
+		border: none
+		padding: 0
+		outline: none
+		width: 100%
+		margin-right: 10px
+	&>a
+		font-size: 22px
+		&:nth-child(2), &:nth-child(6)
+			color: #711c02
+			text-transform: uppercase
+			font-family: 'FuturaC'
+			font-weight: 500
+
+
+.country
+	margin-right: 20px
+	div
+		display: inline-block
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			display: block
+			width: 14px
+			height: 14px
+			right: 2px
+			top: 2px
+			opacity: .6
+			pointer-events: none
+			background-image: url(..\img\_src\scroll-arrow-to-down.svg) 
+
+
+
+.user-buy
+	a
+		margin-left: 20px
+	.buy
+		position: relative
+		display: inline-block
+		a
+			padding-left: 22px
+		&:before
+			pointer-events: none
+			content: ''
+			display: block
+			background-image: url(..\img\_src\paper-bag.svg)
+			height: 20px
+			width: 20px
+			position: absolute
+			left: 20px
+			bottom: 3px
+
+
+
+
+.navigation
+	width: max-content
+	margin: 20px auto
+	a
+		margin: 0 10px
+		position: relative
+		opacity: .6
+		font-size: 20px
+		&:before
+			content: '/'
+			display: block
+			position: absolute
+			left: -12px
+			top: 1px
+		&:nth-child(1):before
+			display: none
+		&:hover
+			opacity: .9
+	.navigation_activ
+		opacity: 1
+
+
+.section-top
+	display: grid
+	grid-template-columns: 60% auto
+	grid-template-rows: auto
+	grid-gap: 35px
+	&__left
+		display: grid
+		grid-template-columns: auto 25%
+		grid-template-rows: repeat(3, minmax(auto, 200px))
+		grid-gap: 10px
+		.main_foto
+			grid-row: 1 / 4
+		div
+			overflow: hidden
+			img
+				width: 100%
+				min-height: 100%
+
+
+
+		
+
+
+.section-top__right
+	h2, h3
+		text-align: center
+		font-size: 34px
+		margin: 0
+	h2
+		margin-bottom: 10px
+		font-weight: 400
+	h3
+		margin-bottom: 30px
+	select
+		width: 100%
+		height: 50px
+		appearance: none
+		outline: none
+		padding: 10px 50px
+		text-align: center
+		opacity: .8
+		text-align-last: center
+	form>a
+		margin-bottom: 20px
+		display: inline-block
+		text-decoration: underline
+		&:nth-child(4)
+			float: right
+			font-weight: 600
+	&>a
+		text-decoration: underline
+		margin-bottom: 20px
+		display: block
+	.product-size, .product-color
+		display: block
+		position: relative
+		margin-bottom: 20px
+		&:after
+			content: ''
+			position: absolute
+			right: 15px
+			top: calc(50% - 10px)
+			z-index: 10
+			display: block
+			height: 16px
+			width: 16px
+			opacity: .4
+			pointer-events: none
+			background-image: url(..\img\_src\scroll-arrow-to-down.svg)
+	h4
+		margin: 40px 0 20px
+		font-weight: 600
+		text-transform: uppercase
+		position: relative
+		&:before
+			content: ''
+			width: 100%
+			height: 1px
+			border-bottom: 1px solid rgba(0,0,0,.4)
+			display: block
+			position: absolute
+			bottom: -10px
+			left: 0
+.right-sect-sohilwrap
+	position: relative
+	p
+		font-weight: 600
+		font-size: 18px
+		text-transform: uppercase
+		margin: 10px 0 0
+	.sohil_wrap
+		position: absolute
+		left: 35%
+		bottom: -5px
+		a
+			margin: 0 3px
+			display: inline-block
+			height: 25px
+			width: 25px
+			margin-top: 5px
+
+
+
+
+.tabl_tazm
+	opacity: .8
+	&:hover
+		opacity: 1
+
+
+
+
+
+
+
+
+.wrap-btn
+	display: grid
+	grid-template-columns: auto 50px
+	grid-gap: 15px
+	button
+		display: inline-block
+		height: 50px
+		background-color: #292929
+		color: #D4D4D4
+		border: none
+		width: auto
+	.heart
+		width: 50px
+		position: relative
+		background-color: #D4D4D4
+		&:before
+			content: ''
+			position: absolute
+			top: calc(50% - 12.5px)
+			left: calc(50% - 12.5px)
+			display: block
+			height: 25px
+			width: 25px
+			background-image: url(..\img\_src\heart.svg)
+
+
+
+
+
+
+.product-color:before
+	content: ''
+	position: absolute
+	left: 15px
+	top: calc(50% - 10px)
+	z-index: 10
+	display: block
+	height: 20px
+	width: 20px
+	border-radius: 50%
+	pointer-events: none
+
+
+
+
+
+//___________________________________ Добавление цветов
+
+.beforeCol_0:before
+	background-color: #867A6A
+.beforeCol_1:before
+	background-color: red
+.beforeCol_2:before
+	background-color: blue
+
+
+//________________________________________________________
+
+
+
+
+.you_like
+	h3
+		text-align: center
+		margin: 60px auto 50px
+		text-transform: uppercase
+		font-weight: 600
+		font-size: 24px
+		position: relative
+		&:before
+			content: ''
+			width: 100%
+			height: 1px
+			border-bottom: 1px solid rgba(0,0,0,.4)
+			display: block
+			position: absolute
+			bottom: -30px
+			left: 0
+
+.sect_you_like
+	display: grid
+	grid-template-columns: repeat(3, minmax(auto, 390px))
+	grid-template-rows: max-content
+	grid-gap: 15px
+	div
+		position: relative
+		.wrap_img
+			overflow: hidden
+			img
+				width: 100%
+				min-height: 100%
+		p, h4
+			text-align: center
+			margin-bottom: 0
+		h4
+			margin: 5px 0 50px
+		button
+			position: absolute
+			left: 5px
+			top: 5px
+			background: none
+			border: none
+			width: auto
+			height: auto
+			cursor: pointer
+			z-index: 10
+			&:hover svg
+				fill: red
+			svg
+				height: 20px
+				width: 20px
+
+footer
+	width: 1024px
+	margin: 50px auto 0
+	height: 130px
+	display: grid
+	justify-items: center
+	grid-template-columns: repeat(4, auto)
+	grid-template-rows: max-content 50px
+	.footer-sohilwrap
+		position: relative
+		p
+			font-weight: 600
+			font-size: 18px
+			text-transform: uppercase
+			margin: 0
+		.sohil_wrap
+			position: absolute
+			transform: translate(-50%, 0)
+			left: 50%
+			top: 25px
+			width: max-content
+			a
+				margin: 0 3px
+				display: inline-block
+				height: 25px
+				width: 25px
+				margin-top: 5px
+	.copi
+		grid-column: 1 / -1
+	.oplata
+		p
+			font-size: 18px
+			margin: 0 0 10px
+			text-transform: uppercase
+			font-weight: 600
+		a
+			margin: 0 5px
+		img
+			width: auto
+			height: 20px
+	.contacts
+		p
+			margin: 10px 0
+		h4
+			margin-top: 0
+			text-transform: uppercase
+			font-size: 18px
+			font-weight: 600
+	.main_links
+		li
+			margin-bottom: 5px
+		li:first-child
+			margin-bottom: 10px
+			font-size: 18px
+			font-weight: 600
+
+
+
+
+
+
+
+
+@import "media"

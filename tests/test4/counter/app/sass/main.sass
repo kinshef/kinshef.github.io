@@ -1,0 +1,119 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+html
+	box-sizing: border-box
+
+*, *:after, *:before
+	box-sizing: inherit
+
+body
+	font-size: 24px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: $bgcolor
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+ul
+	padding: 0
+	margin: 0
+li
+	list-style-type: none
+
+a
+	text-decoration: none
+	color: $text
+
+.wrap
+	width: 1200px
+	margin: 60px auto
+	display: grid
+	grid-template-columns: minmax(auto ,450px) auto minmax(auto ,450px)
+	grid-template-rows: auto
+	grid-gap: 20px
+	grid-template-areas: 'sec1 sec1 sec2' 'sec3 sec4 sec4'
+.sec1
+	grid-area: sec1
+	p
+		width: 400px
+	img
+		position: absolute
+		top: 0
+		right: 0
+		width: 350px
+	&>div
+		width: 500px
+		border: 3px solid $accent
+		p
+			color: $accent
+
+.sec2
+	grid-area: sec2
+	p
+		width: auto
+		margin-top: 40px
+	&>div
+		border: 3px solid $accent
+		p
+			color: $accent
+.sec3
+	grid-area: sec3
+	img
+		width: 300px
+
+.sec4
+	grid-area: sec4
+	img
+		position: absolute
+		top: 0
+		right: 0
+		width: 400px
+		margin-top: 80px
+	p
+		width: 400px
+	&>div
+		background-color: $accent
+		width: 400px
+
+
+.sec1, .sec2, .sec3, .sec4
+	position: relative
+	p
+		text-transform: uppercase
+		&>span
+			font-weight: bold
+	img
+		z-index: -1
+		height: auto
+	&>div
+		height: auto
+		padding: 30px 15px
+		span
+			font-size: 60px
+			font-weight: bold
+
+footer
+	text-align: center
+	width: 1200px
+	margin: 0 auto
+	font-weight: bold
+	font-size: 40px
+	text-transform: uppercase
+	span
+		color: $accent
+
+		
+
+
+
+@import "media"

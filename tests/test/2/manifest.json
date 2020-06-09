@@ -1,0 +1,19 @@
+{
+	"name": "Tag count",
+	"description" : "Tag count",
+	"version": "1.0",
+	"manifest_version": 2,
+	"icons": {
+		"128": "icon.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["popup.js"]
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": ["storage"]
+}

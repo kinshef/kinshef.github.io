@@ -1,0 +1,44 @@
+@import "vars"
+
+@media (max-width: 1129px)
+	.wrap
+		width: auto
+		padding: 0 20px
+		grid-template-areas: 'sec1 sec1' 'sec2 sec3' 'sec4 sec4'
+		grid-template-columns: auto auto
+	footer
+		width: auto
+
+@media (max-width: 767px)
+	body
+		font-size: 20px
+	.sec4>div
+		margin: 50px 0
+	footer
+		font-size: 34px
+	.sec1, .sec2, .sec3, .sec4
+		div>span
+			font-size: 40px
+	.sec2, .sec4, .sec1
+		p 
+			width: auto
+
+@media (max-width: 640px)
+	img
+		display: none
+	.wrap
+		grid-template-areas: 'sec1' 'sec2' 'sec4'
+		grid-template-columns: 1fr
+		grid-gap: 0
+		margin-top: 20px
+	.sec4>div
+		margin: 0
+		width: auto
+	footer
+		font-size: 24px
+	.sec1>div
+		width: auto
+
+@media (max-width: 426px)
+	footer
+		font-size: 20px

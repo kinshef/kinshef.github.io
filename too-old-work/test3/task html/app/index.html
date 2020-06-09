@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+<header>
+	<div class="tab">продавцы</div>
+	<div class="tab">производители</div>
+	<div class="tab">продукты</div>
+	<div class="tab">покупатели</div>
+	<div class="tab">заказы</div>
+	<div class="tab">SQL-запрос</div>
+</header>
+
+	<section class="SELLERS">
+		<div class="wrap">
+			<h3>продавцы</h3>
+			<div class="btn-new">Добавить</div>
+			<table>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>телефон</td>
+					<td>продукт</td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>телефон</td>
+					<td>продукт</td>
+				</tr>
+			</table>
+		</div>
+		<div class="new hiden">
+			<h3>добавить продавца</h3>
+			<div class="btn-end">Назад</div>
+			<form>
+				<div class="title">
+					<label for="title">Название</label>
+					<input type="text" name="title" placeholder="Пример">
+				</div>
+				<div class="phone">
+					<label for="phone">телефон</label>
+					<input type="text" name="phone" placeholder="Пример">
+				</div>
+				<div class="product">
+					<label for="product">продукт</label>
+					<select name="product">
+						<option value selected disabled hidden>Пример</option>
+						<option value="1">1</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="BRANDS">
+		<div class="wrap">
+			<h3>производители</h3>
+			<div class="btn-new">Добавить</div>
+			<table>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>страна</td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>страна</td>
+				</tr>
+			</table>
+		</div>
+		<div class="new hiden">
+			<h3>добавить производителя</h3>
+			<div class="btn-end">Назад</div>
+			<form>
+				<div class="title">
+					<label for="title">Название</label>
+					<input type="text" name="title" placeholder="Пример">
+				</div>
+				<div class="phone">
+					<label for="phone">телефон</label>
+					<input type="text" name="phone" placeholder="Пример">
+				</div>
+				<div class="product">
+					<label for="product">продукт</label>
+					<select name="product">
+						<option value selected disabled hidden>Пример</option>
+						<option value="1">1</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</section>
+
+		<section class="PRODUCTS">
+		<div class="wrap">
+			<h3>продукты</h3>
+			<div class="btn-new">Добавить</div>
+			<table>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>Марка</td>
+					<td>срок гарантии</td>
+					<td>цена</td>
+					<td>наличие на складе</td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>Марка</td>
+					<td>срок гарантии</td>
+					<td>цена</td>
+					<td>наличие на складе</td>
+				</tr>
+			</table>
+		</div>
+		<div class="new hiden">
+			<h3>добавить продукт</h3>
+			<div class="btn-end">Назад</div>
+			<form>
+				<div class="title">
+					<label for="title">Название</label>
+					<input type="text" name="title" placeholder="Пример">
+				</div>
+				<div class="phone">
+					<label for="phone">телефон</label>
+					<input type="text" name="phone" placeholder="Пример">
+				</div>
+				<div class="product">
+					<label for="product">продукт</label>
+					<select name="product">
+						<option value selected disabled hidden>Пример</option>
+						<option value="1">1</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</section>
+
+		<section class="BUYERS">
+		<div class="wrap">
+			<h3>покупатели</h3>
+			<div class="btn-new">Добавить</div>
+			<table>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>телефон</td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>телефон</td>
+				</tr>
+			</table>
+		</div>
+		<div class="new hiden">
+			<h3>добавить покупателя</h3>
+			<div class="btn-end">Назад</div>
+			<form>
+				<div class="title">
+					<label for="title">Название</label>
+					<input type="text" name="title" placeholder="Пример">
+				</div>
+				<div class="phone">
+					<label for="phone">телефон</label>
+					<input type="text" name="phone" placeholder="Пример">
+				</div>
+				<div class="product">
+					<label for="product">продукт</label>
+					<select name="product">
+						<option value selected disabled hidden>Пример</option>
+						<option value="1">1</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</section>
+
+		<section class="ORDERS">
+		<div class="wrap">
+			<h3>заказы</h3>
+			<div class="btn-new">Добавить</div>
+			<table>
+				<tr>
+					<td>id</td>
+					<td>Название товара</td>
+					<td>количество</td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td>Название товара</td>
+					<td>количество</td>
+				</tr>
+			</table>
+		</div>
+		<div class="new hiden">
+			<h3>добавить заказ</h3>
+			<div class="btn-end">Назад</div>
+			<form>
+				<div class="title">
+					<label for="title">Название</label>
+					<input type="text" name="title" placeholder="Пример">
+				</div>
+				<div class="phone">
+					<label for="phone">телефон</label>
+					<input type="text" name="phone" placeholder="Пример">
+				</div>
+				<div class="product">
+					<label for="product">продукт</label>
+					<select name="product">
+						<option value selected disabled hidden>Пример</option>
+						<option value="1">1</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</section>
+
+		<section class="zapros">
+		<div class="wrap">
+			<h3>SQL-запрос</h3>
+			<div class="btn-new">Добавить</div>
+			<table>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>телефон</td>
+					<td>телефон</td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td>Название</td>
+					<td>телефон</td>
+					<td>телефон</td>
+				</tr>
+			</table>
+		</div>
+		<div class="new hiden">
+			<h3>добавить продавца</h3>
+			<div class="btn-end">Назад</div>
+			<form>
+				<div class="title">
+					<label for="title">Название</label>
+					<input type="text" name="title" placeholder="Пример">
+				</div>
+				<div class="phone">
+					<label for="phone">телефон</label>
+					<input type="text" name="phone" placeholder="Пример">
+				</div>
+				<div class="product">
+					<label for="product">продукт</label>
+					<select name="product">
+						<option value selected disabled hidden>Пример</option>
+						<option value="1">1</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<script src="js/common.js"></script>
+	<!-- <script src="js/scripts.min.js"></script> -->
+</body>
+</html>

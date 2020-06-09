@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<meta name="description" content="Сайт по продаже окон">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta name="theme-color" content="#0099DE">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<img class="logo" src="img/_src/logo.png" alt="#" height="auto" width="250px">
+			<a href="#">+7(499) 777-77-77</a>
+			<a href="#">+7(499) 777-77-77</a>
+		</div>
+	</header>
+	<section class="f2">
+		<p>форма с кнопкой</p>
+		<div>
+			<p>оставь телефон и получи что-то офигенное</p>
+			<form class="my-form" id="myForm" method="post" action="send.php">
+				<input type="text" placeholder="Введите номер" name="phone" required>
+				<button type="submit">Получить</button>
+			</form>
+		</div>
+	</section>
+	<section class="sect f3">
+		<div class="wrap">
+			<h3>Тут у нас слайдер</h3>
+			<div class="wrap-slider">
+				<div class="slider-item"><img src="img/_src/1.png" alt="#"></div>
+				<div class="slider-item"><img src="img/_src/2.png" alt="#"></div>
+				<div class="slider-item"><img src="img/_src/3.png" alt="#"></div>
+			</div>
+			<div class="slider-dots">
+				<div class="dot dot-active"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+		</div>
+	</section>
+	<section class="sect f4">
+		<div class="wrap">
+			<h3>просто текстовый блок</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere quis arcu sit amet commodo. Nullam ac dui lacus. Nulla dapibus interdum interdum. Curabitur ut diam nisl. Vivamus libero lacus, viverra at dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare nisi, id pharetra tellus ullamcorper volutpat. Sed lacinia placerat accumsan. Praesent pharetra ipsum scelerisque, sodales urna ut, placerat nulla. Duis nunc urna, semper non arcu ut, sagittis dapibus lorem. Nunc nec urna id velit sodales sodales. Sed porttitor quam eget mollis consequat. Curabitur aliquet nec dui eget aliquet. Nulla in risus ante.</p>
+		</div>
+	</section>
+	<section class="sect f5">
+		<div class="wrap">
+			<h3>Калькулятор <br>(стоимость пользователь узнает по телефону)</h3>
+
+			<ul class="info-tab">
+				<li class="info-tab-item"><img src="img/_src/1o.png" height="90px" alt="#"><p>Одностворчатое</p></li>
+				<li class="info-tab-item"><img src="img/_src/2o.png" height="90px" alt="#"><p>Двухстворчатое</p></li>
+				<li class="info-tab-item"><img src="img/_src/3o.png" height="90px" alt="#"><p>Трехстворчатое</p></li>
+				<li class="info-tab-item"><img src="img/_src/4o.png" height="140px" alt="#"><p>Балконный блок</p></li>
+				<li class="info-tab-item"><img src="img/_src/5o.png" height="140px" alt="#"><p>Остекление балкона</p></li>
+			</ul>
+			<div class="info-tabcontent">
+				<form>
+					<div class="left-tabs">
+						<div class="wrapimg">
+							<img src="img/_src/1o.png">
+						</div>
+						<div class="size">
+							<div class="width">
+								<label>ширина, см</label>
+								<input type="text" placeholder="120">
+							</div>
+							<div class="hight">
+								<label>высота, см</label>
+								<input type="text" placeholder="120">	
+							</div>
+						</div>
+					</div>
+					<div class="right-tabs">
+						<h3>Одностворчатое окно KBE</h3>
+						<p>1. Критерий выбора</p>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt1" id="radio_1">
+							<label class="radio-label" for="radio_1">пункт выбора 1</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt1" id="radio_2">
+							<label class="radio-label" for="radio_2">пункт выбора 2</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt1" id="radio_3">
+							<label class="radio-label" for="radio_3">пункт выбора 3</label>
+						</div>
+						<p>2. Выберите открывание створки</p>
+						<div class="select">
+							<select>
+								<option value selected disabled hidden>Не открывается</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+					</div>
+					<div class="bottom-tabs">
+						<input type="text" name="phone" placeholder="Введите номер">
+						<button>рассчитать</button>
+					</div>
+				</form>
+			</div>			
+			<div class="info-tabcontent">
+				<form>
+					<div class="left-tabs">
+						<div class="wrapimg">
+							<img src="img/_src/2o.png">
+						</div>
+						<div class="size">
+							<div class="width">
+								<label>ширина, см</label>
+								<input type="text" placeholder="120">
+							</div>
+							<div class="hight">
+								<label>высота, см</label>
+								<input type="text" placeholder="120">	
+							</div>
+						</div>
+					</div>
+					<div class="right-tabs">
+						<h3>Двухстворчатое окно KBE</h3>
+						<p>1. Критерий выбора</p>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt2" id="radio_4">
+							<label class="radio-label" for="radio_4">пункт выбора 1</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt2" id="radio_5">
+							<label class="radio-label" for="radio_5">пункт выбора 2</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt2" id="radio_6">
+							<label class="radio-label" for="radio_6">пункт выбора 3</label>
+						</div>
+						<p>2. Выберите открывание створки</p>
+						<div class="select">
+							<select>
+								<option value selected disabled hidden>Не открывается</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+					</div>
+					<div class="bottom-tabs">
+						<input type="text" name="phone" placeholder="Введите номер">
+						<button>рассчитать</button>
+					</div>
+				</form>
+			</div>			
+			<div class="info-tabcontent">
+				<form>
+					<div class="left-tabs">
+						<div class="wrapimg">
+							<img src="img/_src/3o.png">
+						</div>
+						<div class="size">
+							<div class="width">
+								<label>ширина, см</label>
+								<input type="text" placeholder="120">
+							</div>
+							<div class="hight">
+								<label>высота, см</label>
+								<input type="text" placeholder="120">	
+							</div>
+						</div>
+					</div>
+					<div class="right-tabs">
+						<h3>Трехстворчатое окно KBE</h3>
+						<p>1. Критерий выбора</p>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt3" id="radio_7">
+							<label class="radio-label" for="radio_7">пункт выбора 1</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt3" id="radio_8">
+							<label class="radio-label" for="radio_8">пункт выбора 2</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt3" id="radio_9">
+							<label class="radio-label" for="radio_9">пункт выбора 3</label>
+						</div>
+						<p>2. Выберите открывание створки</p>
+						<div class="select">
+							<select>
+								<option value selected disabled hidden>Не открывается</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+					</div>
+					<div class="bottom-tabs">
+						<input type="text" name="phone" placeholder="Введите номер">
+						<button>рассчитать</button>
+					</div>
+				</form>
+			</div>			
+			<div class="info-tabcontent">
+				<form>
+					<div class="left-tabs">
+						<div class="wrapimg">
+							<img src="img/_src/4o.png">
+						</div>
+						<div class="size">
+							<div class="width">
+								<label>ширина, см</label>
+								<input type="text" placeholder="120">
+							</div>
+							<div class="hight">
+								<label>высота, см</label>
+								<input type="text" placeholder="120">	
+							</div>
+						</div>
+					</div>
+					<div class="right-tabs">
+						<h3>Балконные окно KBE</h3>
+						<p>1. Критерий выбора</p>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt4" id="radio_10">
+							<label class="radio-label" for="radio_10">пункт выбора 1</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt4" id="radio_11">
+							<label class="radio-label" for="radio_11">пункт выбора 2</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt4" id="radio_12">
+							<label class="radio-label" for="radio_12">пункт выбора 3</label>
+						</div>
+						<p>2. Выберите открывание створки</p>
+						<div class="select">
+							<select>
+								<option value selected disabled hidden>Не открывается</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+					</div>
+					<div class="bottom-tabs">
+						<input type="text" name="phone" placeholder="Введите номер">
+						<button>рассчитать</button>
+					</div>
+				</form>
+			</div>			
+			<div class="info-tabcontent">
+				<form>
+					<div class="left-tabs">
+						<div class="wrapimg">
+							<img src="img/_src/5o.png">
+						</div>
+						<div class="size">
+							<div class="width">
+								<label>ширина, см</label>
+								<input type="text" placeholder="120">
+							</div>
+							<div class="hight">
+								<label>высота, см</label>
+								<input type="text" placeholder="120">	
+							</div>
+						</div>
+					</div>
+					<div class="right-tabs">
+						<h3>Остекление балкона</h3>
+						<p>1. Критерий выбора</p>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt5" id="radio_13">
+							<label class="radio-label" for="radio_13">пункт выбора 1</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt5" id="radio_14">
+							<label class="radio-label" for="radio_14">пункт выбора 2</label>
+						</div>
+						<div class="radio">
+							<input class="radio-input" type="radio" name="punkt5" id="radio_15">
+							<label class="radio-label" for="radio_15">пункт выбора 3</label>
+						</div>
+						<p>2. Выберите открывание створки</p>
+						<div class="select">
+							<select>
+								<option value selected disabled hidden>Не открывается</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+					</div>
+					<div class="bottom-tabs">
+						<input type="text" name="phone" placeholder="Введите номер">
+						<button>рассчитать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wrap">
+			<h4>просто <br>скромный футер</h4>
+		</div>
+	</footer>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

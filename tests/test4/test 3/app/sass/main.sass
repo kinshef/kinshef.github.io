@@ -1,0 +1,360 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+html
+	box-sizing: border-box
+
+*, *:after, *:before
+	box-sizing: inherit
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	letter-spacing: 0.05em
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+ul
+	padding: 0
+	margin: 0
+li
+	list-style-type: none
+
+a
+	text-decoration: none
+	color: $text
+
+.wrap
+	max-width: 1110px
+	margin: 0 auto
+.hiden
+	display: none
+
+header
+	.top_head
+		background-color: $accent
+	.top_head_content
+		display: grid
+		grid-template-columns: repeat(3, auto)
+		grid-template-rows: 45px
+		align-items: center
+		color: #fff
+		.head_language
+			justify-self: start
+			a
+				text-transform: uppercase
+				opacity: .5
+				color: #fff
+				margin-right: 5px
+			.language_activ
+				opacity: 1
+		.head_phone
+			justify-self: center
+		.head_mail
+			justify-self: end
+
+
+.bottom_head
+	background-color: #2F343A	
+	.bottom_head_content
+		display: grid
+		grid-template-columns: max-content max-content auto
+		grid-template-rows: 100px
+		align-items: center
+		color: #fff
+	.logo_head 
+		padding-right: 30px
+		position: relative
+		img
+			width: 160px
+			height: auto
+		&:before
+			content: ''
+			position: absolute
+			right: 0
+			top: 0
+			width: 0
+			height: 100%
+			border-right: 1px solid #F2F2F2
+	.adres
+		margin-left: 35px
+		padding-left: 30px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: 0px
+			top: calc(50% - 12.5px)
+			width: 25px
+			height: 25px
+			background-image: url(..\img\_src\map.svg)
+	.head_meny
+		justify-self: end
+		li
+			display: inline-block
+			margin: 0 15px
+			text-transform: uppercase
+			a
+				color: #fff
+
+.screen_img
+	width: auto
+	height: calc(100vh - 145px)
+	background: url(..\img\_src\Rectangle.png) no-repeat center center
+	background-size: cover
+	position: relative
+	.main_inscription
+		height: 245px
+		width: 920px
+		border: 2px solid $accent
+		position: absolute
+		transform: translate(-50%, -50%)
+		left: 50%
+		top: 50%
+		padding: 45px 70px
+		h2
+			margin: 0
+			font-size: 64px
+			font-weight: bold
+			color: #fff
+			text-align: center
+		p
+			color: #fff
+			text-align: center
+			margin-top: 45px
+	&:before
+		content: ''
+		background-color: rgba(47, 52, 58, 0.75)
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		height: 100%
+		width: 100%
+	&:after
+		content: ''
+		position: absolute
+		bottom: 50px
+		height: 30px
+		width: 30px
+		left: calc(50% - 15px)
+		background-image: url(..\img\_src\mouse.svg)
+		opacity: .8
+
+section
+	height: auto
+	background-color: #2F343A
+	width: 100%
+	position: relative
+	padding: 120px	0
+	z-index: 0
+	.wrap>h3
+		margin: 0
+		color: #fff
+		text-transform: uppercase
+		padding-top: 50px
+		font-size: 40px
+		font-weight: bold
+		position: relative
+		width: auto
+		&:before
+			content: ''
+			width: 90px
+			height: 6px
+			left: 0
+			top: 0
+			background-color: $accent
+			position: absolute
+
+
+.sec1
+	&:before
+		content: ''
+		width: 31.5315315316%
+		height: 100%
+		left: 0
+		top: 0
+		background-color: $BlackAccent
+		position: absolute
+		z-index: -1
+	&:after
+		content: ''
+		width: 31.5315315316%
+		height: 100%
+		right: 0
+		top: 0
+		background-color: $BlackAccent
+		position: absolute
+		z-index: -1
+	p
+		width: 445px
+		font-size: 18px
+		margin: 30px 0 50px
+	a
+		text-transform: uppercase
+		height: 55px
+		width: 220px
+		background-color: $accent
+		display: block
+		text-align: center
+		padding: 18px 0
+.presented_items
+	width: 445px
+	height: 266px
+	position: absolute
+	bottom: 20px
+	left: calc(60% - 222.5px)
+	div
+		overflow: hidden
+		width: 430px
+		height: 266px
+	.next,.prev
+		width: 160px
+		height: 20px
+		color: $accent
+		cursor: pointer
+		text-transform: uppercase
+		display: block
+		position: absolute
+		background-size: contain
+		right: -150px
+		p
+			margin: 0
+			color: $accent
+			width: auto
+	.next
+		top: 0
+		background: url(..\img\_src\next.svg) no-repeat right center
+	.prev
+		bottom: 0
+		background: url(..\img\_src\prev.svg) no-repeat left center
+		p
+			text-align: end
+
+
+.services
+	display: grid
+	grid-template-columns: repeat(4, auto)
+	grid-template-rows: repeat(2, minmax(auto, 180px))
+	grid-gap: 1px
+	margin-top: 60px
+	a
+		background-color: $BlackAccent
+		text-align: center
+		height: 100%
+		width: 100%
+		position: relative
+		padding-top: 130px
+		p
+			text-transform: uppercase
+			margin: 0
+			font-weight: bold
+			font-size: 18px
+		svg
+			fill: #fff
+			display: block
+			position: absolute
+			top: 55px
+			left: calc(50% - 15px)
+			height: 30px
+			width: 30px
+		&:hover
+			background-color: $accent
+			svg
+				fill: $lightblack
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 35px
+				left: calc(50% - 35px)
+				height: 70px
+				width: 70px
+				border-radius: 50%
+				background-color: #fff
+
+
+.sec3 
+	.wrap>p
+		width: 490px
+		line-height: 23px
+		margin-bottom: 110px
+	&:before
+		content: ''
+		height: 100%
+		width: 410px
+		position: absolute
+		top: 0
+		left: calc(50% - 205px)
+		background-color: $BlackAccent
+		z-index: -1
+
+.chance
+	display: grid
+	grid-template-columns: repeat(3, 200px)
+	grid-template-rows: repeat(2, 160px)
+	grid-gap: 1px
+	position: absolute
+	transform: translate(-50%, 0)
+	left: 72%
+	bottom: 220px
+	div:nth-child(1), div:nth-child(5), div:nth-child(2)
+		background-color: #fff
+		color: $lightblack
+		text-align: center
+		h3
+			font-size: 64px
+			margin: 25px 0 0
+		h4
+			font-size: 18px
+			margin: 0
+		p
+			font-size: 12px
+			margin: 10px 0 0
+	div:nth-child(3),div:nth-child(4)
+		background: url(..\img\_src\Rectangle1.png) no-repeat center center
+		background-size: contain
+
+.adres_map
+	background: url(..\img\_src\maps.png) no-repeat center center
+	background-size: cover
+
+
+footer
+	background-color: $accent
+	.wrap
+		display: grid
+		grid-template-columns: repeat(4, auto)
+		grid-template-rows: 160px
+		align-items: center
+		justify-items: center
+		.footer_logo
+			background: url(..\img\_src\logo_footer.svg) no-repeat center center
+			width: 160px
+			height: 46px
+		.footer_adres
+			font-size: 14px
+			p
+				margin: 0 0 10px
+			span
+				color: $lightblack
+		.footer_phone p
+			font-size: 14px
+			margin: 10px 0
+		&>a
+			color: $lightblack
+			font-size: 12px
+			text-decoration-line: underline
+
+@import "media"

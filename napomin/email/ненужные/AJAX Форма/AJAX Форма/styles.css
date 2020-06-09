@@ -1,0 +1,19 @@
+form {
+  position: relative;
+}
+
+.wrapper-after-submit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /*background-color: rgba(255, 78, 82, 0.49);*/
+  display: none;
+}
+
+body {
+  font-family: Arial, serif;
+}
+
+button {
+  width: 245px;
+}

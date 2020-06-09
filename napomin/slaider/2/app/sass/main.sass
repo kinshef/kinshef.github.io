@@ -1,0 +1,226 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+html
+	box-sizing: border-box
+
+*, *:after, *:before
+	box-sizing: inherit
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		outline: none
+
+.hiden
+	// display: none !important
+	opacity: 0
+	z-index: -100
+
+
+
+
+
+.slider
+	width: 100%
+	margin: 0 auto
+	.wrap 
+		width: 100%
+		position: relative
+		cursor: grab
+		height: 600px
+		overflow: hidden
+		.slider-item
+			width: 100%
+			height: 100%
+			position: absolute
+			transition: all .5s linear
+			.slider_text
+				color: #fff
+				position: absolute
+				left: 200px
+				top: 150px
+			.img_wrap
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				z-index: -2
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+
+
+
+
+
+
+
+
+
+
+.slider .wrap .prev
+	position: absolute
+	cursor: pointer
+	top: 50%
+	transform: translate(0, -50%)
+	width: 90px
+	right: 90px
+	transition: all 0.3s
+	height: 90px
+	overflow: hidden
+
+
+.slider .wrap .prev:hover .arrow-left
+	left: -90px
+	transition: left .3s ease
+
+.slider .wrap .prev .arrow-left
+	width: 180px
+	height: 90px
+	position: relative
+	top: 0
+	left: 0
+	transition: left .3s ease
+	&:before
+		content: ''
+		position: absolute
+		height: 30px
+		width: 30px
+		background: url(..\img\_src\left-arrow.svg) center no-repeat
+		background-size: cover
+		top: 0
+		left: 0
+		background-color: #000
+		height: 100%
+		width: 50%
+		background-size: 30px
+	&:after
+		content: ''
+		position: absolute
+		height: 30px
+		width: 30px
+		background: url(..\img\_src\left-arrow-black.svg) center no-repeat
+		background-size: cover
+		top: 0
+		right: 0
+		background-color: #fff
+		height: 100%
+		width: 50%
+		background-size: 30px
+
+
+
+
+
+
+
+
+
+
+.slider .wrap .next
+	position: absolute
+	cursor: pointer
+	top: 50%
+	transform: translate(0, -50%)
+	width: 90px
+	right: 0px
+	transition: all 0.3s
+	height: 90px
+	overflow: hidden
+
+
+.slider .wrap .next:hover .arrow-right
+	left: 0px
+	transition: left .3s ease
+
+.slider .wrap .next .arrow-right
+	width: 180px
+	height: 90px
+	position: relative
+	top: 0
+	left: -90px
+	transition: left .3s ease
+	&:before
+		content: ''
+		position: absolute
+		height: 30px
+		width: 30px
+		background: url(..\img\_src\right-arrow-black.svg) center no-repeat
+		background-size: cover
+		top: 0
+		left: 0
+		background-color: #fff
+		height: 100%
+		width: 50%
+		background-size: 30px
+	&:after
+		content: ''
+		position: absolute
+		height: 30px
+		width: 30px
+		background: url(..\img\_src\right-arrow.svg) center no-repeat
+		background-size: cover
+		top: 0
+		right: 0
+		background-color: #000
+		height: 100%
+		width: 50%
+		background-size: 30px
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-dots
+	width: 90%
+	margin: 0 auto
+	margin-top: 20px
+	display: flex
+	justify-content: center
+.slider-dots .dot 
+	cursor: pointer
+	height: 16px
+	width: 16px
+	margin: 0 10px
+	background-color: #c78030
+	border-radius: 50%
+	display: inline-block
+	transition: background-color 1s ease
+.slider-dots .active 
+	background-color: #000
+	height: 18px
+	width: 18px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media"
