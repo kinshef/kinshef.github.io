@@ -2,6 +2,7 @@
 
 Как пример работы с react(redux):
 https://kinshef.github.io/react-redux-app/index.html#/
+
 Примеры лендингов:
 kinshef.github.io/primerLending/0320-primerL1/
 kinshef.github.io/primerLending/0320-primerL2/
