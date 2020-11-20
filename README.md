@@ -1,6 +1,6 @@
 # kinshef.github.io
 
-Как пример работы с react(redux): <br>
+Как пример работы с react(redux)(login: z.kinshef@gmail.com; password: free): <br>
 https://kinshef.github.io/react-redux-app/index.html#/
 
 Примеры лендингов: <br>
