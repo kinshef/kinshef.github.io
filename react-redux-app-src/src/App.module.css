@@ -3,6 +3,10 @@
     display: flex;
 }
 
+.App{
+    /* background: #000; */
+}
+
 .flexBoxMain>section{
     background-color: green;
     flex: 3;
