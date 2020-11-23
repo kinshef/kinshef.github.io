@@ -16,7 +16,7 @@ a:hover {
 
 /* Custom */
 /* section-header */
-/* .section-header{
+.section-header{
   position: sticky;
   top: 0;
   background-color: #fff;
@@ -83,7 +83,6 @@ a:hover {
 .header-nav__item a.header-titleEnd,
 .header-nav__item a.header-title{
   display: block;
-  text-align: center;
   border-bottom: 2px solid transparent;
   padding: 0.25rem 0;
 }
@@ -96,22 +95,42 @@ a:hover {
   border-color:orange;
   position: relative;
   z-index: 4;
-} */
-
-
-
-/* .header-navDop__item{
+}
+.header-navDop__item{
   overflow: hidden;
 }
 .header-navDop{
-  height: 0;
+  max-height: 0;
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
-} */
+  transition: all 0.5s;
+}
+.header-dopUl{
+  position: relative;
+}
+.header-dopUl::before{
+  content: '\f107';
+  font-family: fontAwesome;
+  position: absolute;
+  font-size: 1.6em;
+  transition: all 0.5s;
+  right: 0;
+  top: 0;
+}
+.header-dopUl.active>.header-navDop{
+  max-height: 100vh;
+  opacity: 1;
+  pointer-events: painted;
+}
+.header-dopUl.active::before{
+  transform: rotate(180deg);
+}
 
 
-@media(min-width: 992px){
+
+
+/* @media(min-width: 992px){
   .header-nav{
     display: flex;
     align-items: center;
@@ -137,4 +156,4 @@ a:hover {
     opacity: 1;
     pointer-events: painted;
   }
-}
+} */
