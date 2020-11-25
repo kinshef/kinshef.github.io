@@ -1,10 +1,12 @@
 header{
-    background-color: red;
+    background-color: #ccc;
     min-width: 1200px;
 }
 .content{
     height: 60px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .preloader{
     width: 60px;
@@ -20,7 +22,7 @@ header{
     margin: 5px;
     object-fit: cover;
 }
-.taitel{
+.title{
     width: 100%;
     text-align: center;
     align-self: center;
@@ -29,4 +31,13 @@ header{
 .login,.NavLogin{
     align-self: center;
     margin: 0 10px;
+}
+
+.btnLogout{
+    border: none;
+}
+.authWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
