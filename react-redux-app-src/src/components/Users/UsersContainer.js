@@ -2,7 +2,7 @@ import React from 'react';
 import Users from "./Users";
 import {connect} from "react-redux";
 import {setCurrentPage, getUsers, getUnFollowUsers, getFollowUsers} from "../../redux/users-reduser";
-import {getCurrentPage, getFollowingInProgress, getUserIsFetching, getPageSize, getTotalUsersCount, getUserData
+import {getCurrentPage, getFollowingInProgress, getIsFetching, getPageSize, getTotalUsersCount, getUserData
 } from "../../redux/selectors/users-selectors";
 import Preloader from "../common/Preloader";
 import {compose} from "redux";
@@ -39,7 +39,7 @@ let mapStateToProps = (state) => {
         followingInProgress: getFollowingInProgress(state),
         currentPage: getCurrentPage(state),
         pageSize: getPageSize(state),
-        isFetching: getUserIsFetching(state),
+        isFetching: getIsFetching(state),
         totalUsersCount: getTotalUsersCount(state)
     }
 };
