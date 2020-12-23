@@ -1,5 +1,6 @@
 import React from 'react';
-import style from '../Profile.module.css';
+// import style from '../Profile.module.css';
+import style from './ProfileForm_Data.module.css';
 
 let ProfileData = ({profile: {contacts, aboutMe, lookingForAJob, lookingForAJobDescription, fullName}, isOwner, goToEditMode}) => {
     return (

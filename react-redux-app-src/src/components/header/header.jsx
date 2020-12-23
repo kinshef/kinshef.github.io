@@ -3,6 +3,8 @@ import style from './header.module.css';
 import photoUser from '../../assets/img/logo192.png'
 import {NavLink} from "react-router-dom";
 import Preloader from "../common/Preloader";
+import Nav from "./nav/nav";
+
 
 let Header = ({isFetching, isAuth, login, AuthLogout}) => {
     return (
@@ -12,7 +14,12 @@ let Header = ({isFetching, isAuth, login, AuthLogout}) => {
                     <a href='/' className={style.logo}>
                         <img  alt='' src={photoUser}/>
                     </a>
-                    <div className={style.title}>test: react/redux</div>
+
+                    
+                    {/* <div className={style.title}>test: react/redux</div> */}
+                    <Nav/>
+
+
                     {isFetching
                         ? <Preloader class={style.preloader}/>
                         : isAuth

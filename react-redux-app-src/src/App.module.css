@@ -1,14 +1,12 @@
 
-.App .flexBoxMain{
-    display: flex;
-}
-
 .App{
-    /* background: #000; */
+    background: #edeef0;
+    min-height: 100vh;
 }
-
-.flexBoxMain>section{
-    background-color: green;
+.App>section{
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-top: none;
     flex: 3;
     padding: 10px;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import style from '../Profile.module.css';
+// import style from '../Profile.module.css';
 import {createField, Input} from "../../../utilit/FormControls/FormsControls";
 import {reduxForm} from "redux-form";
-
+import style from './ProfileForm_Data.module.css';
 
 let ProfileForm = ({profile: {contacts}, profileUpdateStatus, handleSubmit, error}) => {
     const normalizeBoolean = value => {

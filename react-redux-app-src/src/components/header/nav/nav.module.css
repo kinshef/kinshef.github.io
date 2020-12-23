@@ -1,17 +1,15 @@
 .nav {
-    background-color: blue;
     text-align: center;
     flex: 1;
-    padding: 10px;
     font-size: 20px;
     font-weight: 600;
     align-self: flex-start;
-
+    height: 100%;
 }
 .nav ul{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 100%;
 }
 .nav a {
@@ -19,10 +17,12 @@
     width: 100%;
     padding: 5px 0;
     display: block;
+    transition: all 0.4s;
 }
 .nav a.active{
-    color: gold;
+    color: #23ad92;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 .nav a:hover {
-    color: #999;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
 }
