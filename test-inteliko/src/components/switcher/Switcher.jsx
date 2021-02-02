@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import style from './Switcher.module.css';
 
 
@@ -8,9 +8,6 @@ let Switcher = ({value=true, trueText='IS', falseText='IS NOT'}) => {
         trueText: trueText,
         falseText: falseText,
     });
-    // useEffect( () => {
-    //     console.log(switcher)
-    // }, [switcher.value]);
     
     return (
         <div className={`${style.switcher} ${style['switcher_'+switcher.value]}`}>
