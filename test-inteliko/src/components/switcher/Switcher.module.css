@@ -1,0 +1,37 @@
+.switcher{
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 1rem;
+    position: relative;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+.switcher>div{
+    flex: 1;
+    white-space: nowrap;
+    margin: 0.5rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.switcher::before{
+    content: '';
+    transition: all 0.2s;
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    width: calc(50% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 30px;
+    right: auto;
+    pointer-events: none;
+}
+.switcher_true::before{
+    background-color: rgba(0, 128, 0, 0.5);
+    left: 3px;
+}
+.switcher_false::before{
+    background-color: rgba(255, 0, 0, 0.5);
+    left: calc(50% + 3px);
+}
