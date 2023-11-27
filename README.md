@@ -15,4 +15,4 @@ https://kinshef.github.io/pf.ravas
 
 .env <br>
 z.kinshef@gmail.com|free <br>
-free@samuraijs.com|free
+free@samuraijs.com|free (social-network.samuraijs.com)
