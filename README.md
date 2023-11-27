@@ -12,3 +12,7 @@ https://kinshef.github.io/primerLending/1020-primerL5/ <br>
 
 Очень старое портфолио: <br>
 https://kinshef.github.io/pf.ravas
+
+.env
+z.kinshef@gmail.com|free
+free@samuraijs.com|free
