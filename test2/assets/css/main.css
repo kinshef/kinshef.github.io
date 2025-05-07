@@ -1545,6 +1545,11 @@ body {
 .blog-wrap {
   display: flex;
   gap: 40px;
+  justify-content: space-between;
+}
+.blog__item {
+  max-width: 24%;
+  width: 100%;
 }
 .blog__item > img {
   border-radius: 12px;

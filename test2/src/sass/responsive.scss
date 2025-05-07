@@ -216,11 +216,11 @@
     width: 60vw;
   }
   .basket {
+    width: 60vw;
+    right: -60vw;
     &__title {
       font-size: 18px;
     }
-    width: 60vw;
-    right: -60vw;
   }
   .slide-one {
     display: none;

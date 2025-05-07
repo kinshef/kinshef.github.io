@@ -415,8 +415,11 @@ body {
     &-wrap {
         display: flex;
         gap: 40px;
+        justify-content: space-between;
     }
     &__item {
+        max-width: 24%;
+        width: 100%;
         > img {
             border-radius: 12px;
             transition: .2s;
