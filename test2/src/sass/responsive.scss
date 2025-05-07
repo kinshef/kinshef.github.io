@@ -1,0 +1,239 @@
+@use 'vars' as *;
+@use 'mixin' as *;
+
+@media screen and (max-width: 1800px) {
+  .swiper {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+  .games {
+    padding: 20px;
+    &-info {
+      max-width: 100%;
+    }
+    &__image {
+      display: none;
+    }
+  }
+  .friends-right {
+    justify-content: flex-start;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  .header>nav {
+    gap: 20px;
+  }
+  .header-naw {
+    background: $dark;
+    border-radius: 0 32px 0;
+    bottom: 0;
+    padding: 50px 1px 0 24px;
+    position: fixed;
+    left: -40vw;
+    top: 0;
+    transition: .5s;
+    width: 40vw;
+    z-index: 2;
+
+    overflow: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    &.open {
+      left: 0vw;
+      box-shadow: $shadow2;
+    }
+    &__close, &__btn {
+        display: flex;
+        cursor: pointer;
+    }
+    &__btn {
+      color: $white;
+      width: 20px;
+      height: 20px;
+      margin-right: auto;
+      &:hover {
+        color: $blue;
+      }
+    }
+    &__close {
+      width: 36px;
+      height: 36px;
+      right: 20px;
+      top: 20px;
+      &::before, &::after {
+        width: 30px;
+      }
+    }
+    .sab {
+      &-title {
+        order: 1;
+        padding: 0;
+      }
+      &-menu {
+        flex-wrap: wrap;
+        align-items: center;
+        &:after {
+          position: static;
+          order: 2;
+          margin: 5px 0 0 10px;
+        }
+        &.open .sab-wrap {
+          grid-template-rows: 1fr;
+        }
+      }
+      &-wrap {
+        order: 3;
+        position: static;
+        pointer-events: initial;
+        opacity: 1;
+        transform: none;
+        display: grid;
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        transition: 0.5s;
+        min-width: 100%;
+        > * {
+          overflow: hidden;
+        }
+      }
+    }
+    > * {
+      padding: 4px;
+    }
+    .sab-content {
+      padding: 0;
+      > a {
+        padding: 4px;
+      }
+    }
+  }
+  .basket {
+    width: 50vw;
+    right: -50vw;
+  }
+  .pack-wrap {
+    margin-top: 40px;
+  }
+  .pack__item {
+    max-width: 33%;
+    > img {
+      padding: 10px;
+      max-height: 20vw;
+    }
+  }
+  .blog-wrap {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .blog__item {
+    max-width: 48%;
+    width: 100%;
+    > img {
+      height: 150px;
+      max-height: 100%;
+    }
+  }
+  .friends {
+    &-left {
+      max-width: 100%;
+    }
+    &-right {
+      width: 50%;
+      justify-content: flex-start;
+      .icon {
+        height: 400px;
+        &:last-child {
+          transform: translateX(150vw);
+        }
+      }
+      &.friends-right.active .icon:last-child {
+        transform: translateX(60vw);
+      }
+    }
+    > div {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  .questions {
+    &__img {
+      width: 200px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    &-right > h2,
+    &-right > span {
+      text-align: center;
+      display: block;
+    }
+    > div {
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+  }
+  .footer {
+    &-info {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      > p{
+        width: 100%;
+      }
+    }
+    > div {
+      > * {
+        text-align: center;
+      } 
+
+    }
+    form,
+    &-contact {
+      flex-direction: column;
+    }
+    &__btn {
+      max-width: 100%;
+    }
+    &-logo {
+      justify-content: center;
+    }
+  }
+
+}
+
+@media screen and (max-width: 567px) {
+  .header-naw {
+    left: -60vw;
+    width: 60vw;
+  }
+  .basket {
+    &__title {
+      font-size: 18px;
+    }
+    width: 60vw;
+    right: -60vw;
+  }
+  .slide-one {
+    display: none;
+  }
+  .blog-wrap {
+    flex-direction: column;
+  }
+  .blog__item {
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 991px) {
+
+}
