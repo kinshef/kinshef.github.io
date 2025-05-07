@@ -1,7 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/*!***********************!*\
-  !*** ./src/js/app.js ***!
-  \***********************/
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.swiper', {
     slidesPerView: 1.05,
